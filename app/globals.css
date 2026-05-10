@@ -48,7 +48,7 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
+    --background: #000000;
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
@@ -83,7 +83,7 @@
 }
 
 .dark {
-    --background: oklch(0.145 0 0);
+    --background: #000000;
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);
@@ -124,7 +124,8 @@
     @apply font-sans text-foreground;
     margin: 0;
     padding: 0;
-    background: none;
+    background: #000000;
+    overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     }
@@ -136,7 +137,8 @@
     padding: 0;
     padding-bottom: 200px;
     min-height: 200vh;
-    background: none;
+    background: #000000;
+    overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     }
