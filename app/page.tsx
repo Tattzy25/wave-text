@@ -1,13 +1,16 @@
 import { WavyBlock, WavyBlockItem } from "@/components/ui/wavy-text-block"
 
 const titles = [
-  "Flexible",
-  "Animated",
-  "Customizable",
-  "Optimized",
-  "Lightweight",
-  "Responsive",
-  "UI Blocks",
+  "Girlfriend",
+  "Boyfriend",
+  "Life Coach",
+  "Therapist",
+  "Attorney",
+  "Any Celebrity",
+  "Santa Claus",
+  "Any tutor",
+  "Personal Trainer",
+  "literally Anyone",
 ]
 
 export default function Page() {

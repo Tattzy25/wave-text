@@ -120,10 +120,27 @@
   * {
     @apply border-border outline-ring/50;
     }
-  html, body {
+  html {
     @apply font-sans text-foreground;
     margin: 0;
     padding: 0;
     background: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    }
+  html::-webkit-scrollbar {
+    display: none;
+    }
+  body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200px;
+    min-height: 200vh;
+    background: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    }
+  body::-webkit-scrollbar {
+    display: none;
     }
 }
