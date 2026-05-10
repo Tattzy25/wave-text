@@ -1,19 +1,29 @@
-import { Button } from "@/components/ui/button"
+import { WavyBlock, WavyBlockItem } from "@/components/ui/wavy-text-block"
+
+const titles = [
+  "Flexible",
+  "Animated",
+  "Customizable",
+  "Optimized",
+  "Lightweight",
+  "Responsive",
+  "UI Blocks",
+]
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+    <main className="h-screen pt-60 m-0 p-0">
+      <div className="w-full max-w-6xl mx-0 px-0">
+        <WavyBlock className="flex flex-col items-start justify-start gap-6">
+          {titles.map((title, index) => (
+            <WavyBlockItem key={title} index={index}>
+              <h2 className="text-[4rem] leading-none font-bold tracking-tighter whitespace-nowrap uppercase">
+                {title}
+              </h2>
+            </WavyBlockItem>
+          ))}
+        </WavyBlock>
       </div>
-    </div>
+    </main>
   )
 }
